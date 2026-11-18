@@ -1,0 +1,257 @@
+{
+  "dataset_stats": {
+    "total_reviews": 100,
+    "categories": {
+      "Laptops": 25,
+      "Audio": 20,
+      "Smartphones": 15,
+      "Smart Home": 10,
+      "Gaming": 9,
+      "Tablets": 8,
+      "Accessories": 5,
+      "Wearables": 3,
+      "Cameras": 3,
+      "E-Readers": 1,
+      "Monitors": 1
+    },
+    "sentiment_counts": {
+      "positive": 53,
+      "negative": 32,
+      "neutral": 15
+    },
+    "ner_sentences": 40,
+    "ner_tokens": 609,
+    "entity_type_counts": {
+      "PER": 40,
+      "PROD": 42,
+      "ORG": 42,
+      "LOC": 40,
+      "DATE": 16,
+      "MONEY": 25
+    }
+  },
+  "sentiment_cv_scores": {
+    "Multinomial Naive Bayes": {
+      "cv_accuracy_mean": 0.7733333333333334,
+      "cv_accuracy_std": 0.06798692684790383,
+      "cv_f1_macro_mean": 0.6675717070453914,
+      "cv_f1_macro_std": 0.1473466235382075
+    },
+    "Logistic Regression": {
+      "cv_accuracy_mean": 0.7733333333333333,
+      "cv_accuracy_std": 0.05333333333333337,
+      "cv_f1_macro_mean": 0.7376444144091202,
+      "cv_f1_macro_std": 0.055983663877189484
+    },
+    "Linear SVC": {
+      "cv_accuracy_mean": 0.7866666666666667,
+      "cv_accuracy_std": 0.026666666666666707,
+      "cv_f1_macro_mean": 0.7405897914721444,
+      "cv_f1_macro_std": 0.038027740612149634
+    },
+    "Random Forest": {
+      "cv_accuracy_mean": 0.7733333333333332,
+      "cv_accuracy_std": 0.06798692684790383,
+      "cv_f1_macro_mean": 0.7256060606060605,
+      "cv_f1_macro_std": 0.14422375395031672
+    }
+  },
+  "sentiment_results": {
+    "VADER (Lexicon)": {
+      "accuracy": 0.8,
+      "precision_macro": 0.5740740740740741,
+      "recall_macro": 0.625,
+      "f1_macro": 0.5906810035842294,
+      "f1_weighted": 0.7347956989247312
+    },
+    "TextBlob (Rule)": {
+      "accuracy": 0.68,
+      "precision_macro": 0.6071428571428571,
+      "recall_macro": 0.5897435897435898,
+      "f1_macro": 0.5969135802469135,
+      "f1_weighted": 0.6811851851851852
+    },
+    "Multinomial Naive Bayes": {
+      "accuracy": 0.72,
+      "precision_macro": 0.7797619047619048,
+      "recall_macro": 0.7147435897435898,
+      "f1_macro": 0.7409611992945325,
+      "f1_weighted": 0.7223280423280423
+    },
+    "Logistic Regression": {
+      "accuracy": 0.68,
+      "precision_macro": 0.6666666666666666,
+      "recall_macro": 0.7051282051282052,
+      "f1_macro": 0.6763285024154588,
+      "f1_weighted": 0.6817391304347825
+    },
+    "Linear SVC": {
+      "accuracy": 0.76,
+      "precision_macro": 0.8277777777777778,
+      "recall_macro": 0.7724358974358975,
+      "f1_macro": 0.7799171842650102,
+      "f1_weighted": 0.7680993788819876
+    },
+    "Random Forest": {
+      "accuracy": 0.8,
+      "precision_macro": 0.7870370370370371,
+      "recall_macro": 0.798076923076923,
+      "f1_macro": 0.7911764705882353,
+      "f1_weighted": 0.7995294117647059
+    }
+  },
+  "ner_token_results": {
+    "Rule-Based NER": {
+      "token_accuracy": 0.9766355140186916,
+      "token_precision_macro": 0.9809208246708248,
+      "token_recall_macro": 0.9794745484400657,
+      "token_f1_macro": 0.9794981781283152,
+      "token_f1_weighted": 0.9763691194365883
+    },
+    "NLTK MaxEnt Chunker": {
+      "token_accuracy": 0.5,
+      "token_precision_macro": 0.2740623506927855,
+      "token_recall_macro": 0.30952380952380953,
+      "token_f1_macro": 0.27619047619047615,
+      "token_f1_weighted": 0.3796172674677348
+    },
+    "Statistical LinearSVC NER": {
+      "token_accuracy": 0.9626168224299065,
+      "token_precision_macro": 0.9584267040149393,
+      "token_recall_macro": 0.9677750410509032,
+      "token_f1_macro": 0.9616216530896363,
+      "token_f1_weighted": 0.9632586139225995
+    }
+  },
+  "ner_span_results": {
+    "Rule-Based NER": {
+      "span_precision": 0.9583333333333334,
+      "span_recall": 0.971830985915493,
+      "span_f1": 0.965034965034965,
+      "per_type_metrics": {
+        "ORG": {
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.9333333333333333,
+          "support": 14
+        },
+        "PER": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 14
+        },
+        "LOC": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 14
+        },
+        "PROD": {
+          "precision": 0.9230769230769231,
+          "recall": 0.8571428571428571,
+          "f1": 0.888888888888889,
+          "support": 14
+        },
+        "DATE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        },
+        "MONEY": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        }
+      }
+    },
+    "NLTK MaxEnt Chunker": {
+      "span_precision": 0.25925925925925924,
+      "span_recall": 0.19718309859154928,
+      "span_f1": 0.22399999999999998,
+      "per_type_metrics": {
+        "ORG": {
+          "precision": 0.1,
+          "recall": 0.07142857142857142,
+          "f1": 0.08333333333333333,
+          "support": 14
+        },
+        "PER": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        },
+        "LOC": {
+          "precision": 0.8125,
+          "recall": 0.9285714285714286,
+          "f1": 0.8666666666666666,
+          "support": 14
+        },
+        "PROD": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        },
+        "DATE": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "MONEY": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        }
+      }
+    },
+    "Statistical LinearSVC NER": {
+      "span_precision": 0.868421052631579,
+      "span_recall": 0.9295774647887324,
+      "span_f1": 0.8979591836734694,
+      "per_type_metrics": {
+        "ORG": {
+          "precision": 0.9285714285714286,
+          "recall": 0.9285714285714286,
+          "f1": 0.9285714285714286,
+          "support": 14
+        },
+        "PER": {
+          "precision": 0.9333333333333333,
+          "recall": 1.0,
+          "f1": 0.9655172413793104,
+          "support": 14
+        },
+        "LOC": {
+          "precision": 0.9333333333333333,
+          "recall": 1.0,
+          "f1": 0.9655172413793104,
+          "support": 14
+        },
+        "PROD": {
+          "precision": 0.5882352941176471,
+          "recall": 0.7142857142857143,
+          "f1": 0.6451612903225806,
+          "support": 14
+        },
+        "DATE": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 5
+        },
+        "MONEY": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        }
+      }
+    }
+  }
+}
